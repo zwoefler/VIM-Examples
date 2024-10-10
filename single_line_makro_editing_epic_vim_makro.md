@@ -1,7 +1,7 @@
 # What we have
 ```
 type Color struct {
-    Red         byte
+    Red         byte`json:"red"`
     Blue        byte
     Green       byte
     Foreground  bool
@@ -20,9 +20,13 @@ type Color struct {
 
 
 # How to do it:
-Go to line 3 and press the following:
+Key presses separated by spaces
+Go to line 4 and press the following:
 - qa (Starting a makro)
-- ^ yiw A `json:" <ESC> p b ~ A "` 
+- ^ 
+- yiw 
+- A 
+- `json:" <ESC> p b ~ A "` 
 - q (Stopping the Makro)
 
 - @a (Execute the makro)
